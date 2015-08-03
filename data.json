@@ -1,0 +1,133 @@
+{
+  "statements": [
+    {
+      "statement": "MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Futurama',release_date:922579200})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Humans',release_date:1434240000, end_date: 1441065600})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Mr. Robot',release_date:1432771200})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'True Detective',release_date:1389398400, end_date:1443657600})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Game of Thrones',release_date:1303084800})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Hannibal',release_date:1365033600, end_date: 1446336000})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Killjoys',release_date:1434758400})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Under the Dome',release_date:1372032000, end_date: 1448928000})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Suits',release_date:1308700800})"
+    },
+    {
+      "statement": "CREATE (s:TVShow{title:'Dark Matter',release_date:1434153600, end_date: 1451520000})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test01@test.com', age: 20, gender: 1})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test02@test.com', age: 20, gender: 2})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test03@test.com', age: 21, gender: 1})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test04@test.com', age: 21, gender: 2})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test05@test.com', age: 22, gender: 1})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test06@test.com', age: 22, gender: 2})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test07@test.com', age: 23, gender: 1})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test08@test.com', age: 23, gender: 2})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test09@test.com', age: 24, gender: 1})"
+    },
+    {
+      "statement": "CREATE (u:User{email:'test10@test.com', age: 24, gender: 2})"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test01@test.com'}), (s:TVShow{title:'Futurama'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test01@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test02@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test03@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test04@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test05@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test06@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test07@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test08@test.com'}), (s:TVShow{title:'Humans'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test02@test.com'}), (s:TVShow{title:'Mr. Robot'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test03@test.com'}), (s:TVShow{title:'True Detective'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test04@test.com'}), (s:TVShow{title:'True Detective'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test04@test.com'}), (s:TVShow{title:'Game of Thrones'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test05@test.com'}), (s:TVShow{title:'Game of Thrones'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test06@test.com'}), (s:TVShow{title:'Game of Thrones'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test08@test.com'}), (s:TVShow{title:'Hannibal'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test09@test.com'}), (s:TVShow{title:'Hannibal'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test09@test.com'}), (s:TVShow{title:'Killjoys'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test10@test.com'}), (s:TVShow{title:'Killjoys'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test08@test.com'}), (s:TVShow{title:'Suits'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test09@test.com'}), (s:TVShow{title:'Suits'}) MERGE (u)-[r:LIKE]->(s)"
+    },
+    {
+      "statement": "MATCH (u:User{email:'test10@test.com'}), (s:TVShow{title:'Suits'}) MERGE (u)-[r:LIKE]->(s)"
+    }
+  ]
+}

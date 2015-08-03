@@ -1,0 +1,22 @@
+{
+  "statements": [
+    {
+      "statement": "CREATE INDEX ON :User(email)"
+    },
+    {
+      "statement": "CREATE INDEX ON :User(age)"
+    },
+    {
+      "statement": "CREATE INDEX ON :User(gender)"
+    },
+    {
+      "statement": "CREATE INDEX ON :TVShow(title)"
+    },
+    {
+      "statement": "CREATE INDEX ON :TVShow(release_date)"
+    },
+    {
+      "statement": "CREATE INDEX ON :TVShow(end_date)"
+    }
+  ]
+}
